@@ -18,23 +18,6 @@ const SignIn: FC = () => {
     const { user, error, loading } = useSelector((state: RootState) => state.auth);
     const authenticated  = useSelector((state: RootState) => state.auth.authenticated);
 
-      useEffect(() => {
-
-        const unsubscribe =  firebase.auth().onAuthStateChanged( async (user) => {
-            if(user) {
-                dispatch(setLoading(true));
-                const uid = await user.uid;
-                await dispatch(getUserById(uid));     
-            }
-            dispatch(setLoading(false));
-        })
-        return () => {
-            unsubscribe();
-          };
-      }, [dispatch]);
-      useEffect(() => {
-        dispatch(setError(''));
-      }, [])
     const signInHandler = (e: FormEvent) => {
         e.preventDefault();
         if(error) {

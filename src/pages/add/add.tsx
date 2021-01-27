@@ -68,7 +68,6 @@ const Add: FC = () => {
             .then(() => setIsAdd(true))
         ]);
     }
-    console.log(articles[articles.length - 1]?.id);
     
     
     return (

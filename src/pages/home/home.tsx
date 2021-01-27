@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC, useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {Link } from "react-router-dom";
 
@@ -17,14 +17,13 @@ interface IArticle {
 const Home: FC = () => {
     const { articles } = useSelector((state: RootState) => state.articles);
     const dispatch = useDispatch();
-    useEffect(() => {
+    useEffect (() => {
         fetch("http://localhost:4000/articles")
         .then(res => res.json())
         .then((result) => {
             dispatch(loadArticles(result));
         })
-    },[]);
-    
+    },[]); 
     return (
         <section className='articles'>
             <div className='container'>

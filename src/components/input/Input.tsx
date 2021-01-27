@@ -16,6 +16,7 @@ const Input:FC<propsT> = ({type, name, placeholder, className, value, change }) 
         type={type}
         name={name}
         placeholder={placeholder}
+        value={value}
         className={className}
         onChange={(e) => change(e)}
         autoComplete="off"
