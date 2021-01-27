@@ -46,7 +46,7 @@ const Add: FC = () => {
             title: title,
             content: content,
         };
-        console.log(Number(newses[newses.length - 1]?.id) + 1);
+
         
         await Promise.all([
             await fetch("http://localhost:4000/articles", {
@@ -56,8 +56,7 @@ const Add: FC = () => {
                 },
                 body: JSON.stringify(newArticle),
             })
-                .then(res => res.json())
-                .then(result => console.log(result)),
+                .then(res => res.json()),
             await fetch("http://localhost:4000/fullArticles", {
                 method: 'POST',
                 headers: {

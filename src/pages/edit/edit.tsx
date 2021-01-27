@@ -66,9 +66,7 @@ const Edit: FC = () => {
                   'Content-Type': 'application/json;charset=utf-8'
                 },
                 body: JSON.stringify(editedArticle),
-            })
-                .then(res => res.json())
-                .then(result => console.log(result)),
+            }),
             await fetch(`http://localhost:4000/fullArticles/${id}`, {
                 method: 'PUT',
                 headers: {
