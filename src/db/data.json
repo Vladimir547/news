@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "2",
-      "title": "Frontend design, react, and a bridge over the great divide",
+      "title": "Frontend design, react, and a bridge over the great divide2",
       "shortDescription": "Frontend designers create the HTML, CSS, and presentational JavaScript code that powers web products’ user interfaces. I see frontend design as helpful mortar that bridges the gap between design and development.",
       "rating": 2.75,
       "ratingCount": 2.75
@@ -34,12 +34,19 @@
       "shortDescription": "descrition 6",
       "rating": 2.75,
       "ratingCount": 2.75
+    },
+    {
+      "id": 7,
+      "title": "priv",
+      "shortDescription": "eto 9",
+      "rating": 0,
+      "ratingCount": 0
     }
   ],
   "fullArticles": [
     {
       "id": 2,
-      "title": "Frontend design, react, and a bridge over the great divide",
+      "title": "Frontend design, react, and a bridge over the great divide2",
       "content": "Content for article 2"
     },
     {
@@ -61,6 +68,11 @@
       "id": 6,
       "title": "news 6",
       "content": " content 6"
+    },
+    {
+      "id": 7,
+      "title": "priv",
+      "content": "content\n"
     }
   ]
 }

@@ -5,6 +5,7 @@ import { Redirect } from "react-router-dom";
 import { RootState } from '../../reducers/index';
 import Input from '../../components/input/Input';
 import Submit from '../../components/submit/submit';
+import Textarea from '../../components/textarea/textarea';
 import Message from '../../components/message/Message';
 import { loadNews, loadArticles } from '../../actions/articleActions';
 
@@ -90,13 +91,11 @@ const Add: FC = () => {
                     className="input"
                     placeholder="Short Description"
                 />
-                <Input 
-                    type="text"
-                    name="content"
+                <Textarea 
+                    placeholder="content" 
+                    className="input" 
+                    change={(e: any) => setContent(e.currentTarget.value)} 
                     value={content}
-                    change={(e: any) => setContent(e.currentTarget.value)}
-                    className="input"
-                    placeholder="content"
                 />
                 {/* <p><Link to="/forgot-password">Forgot password ?</Link></p> */}
                 <Submit className='submit'  text={ "add"} name='sub'/> 
