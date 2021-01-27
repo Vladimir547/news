@@ -1,0 +1,17 @@
+.error_wrapper {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show-err{
+    width: 80%;
+    position: relative;
+}
+.show-err::before {
+    content: '';
+    position: absolute;
+    left: -19px;
+    border-left: 7px solid red;
+    height: 100%;
+}

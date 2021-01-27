@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, ul, li, p, a{
+  margin:0;
+}
+.container {
+  width: 1000px;
+  margin: auto;
+  padding: 0px 10px;
+  height: 100%;
+}
+.App-header {
+  height: 100px;
+  background-color: tan;
+}
+.App-header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.nav__links a + a{
+  margin-left: 30px;
+}
+.App-header nav a{
+  color: black;
+  border: none;
+  transition: all .2s ease-out;
+}
+.App-header nav a:hover{
+  color: gray;
+  border-bottom: 1px solid gray;
+}
+.auth__setings{
+  display: flex;
+  justify-content: space-between;
+}
+.auth__setings .btn-auth {
+  margin-left: 5px;
+}
+.App-header nav .btn-auth {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.App-header nav .btn-auth:hover {
+  background: gray;
+  color: white;
+  border-bottom: none;
+}
+.form_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}

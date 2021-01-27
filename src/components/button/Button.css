@@ -1,0 +1,15 @@
+.btn-auth {
+    margin-left: 5px;
+}
+ .btn-auth {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.btn-auth:hover {
+    background: gray;
+    color: white;
+    border-bottom: none;
+}
