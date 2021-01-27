@@ -1,4 +1,4 @@
-import { AuthState, AuthAction, SET_USER, SET_ERROR, SET_LOADING, SET_SUCCESS } from '../actions/authActionsTypes';
+import { AuthState, AuthAction, SET_USER, SET_ERROR, SET_LOADING, SET_SUCCESS, SIGN_OUT } from '../actions/authActionsTypes';
 
 const initialState: AuthState = {
     user: null,
