@@ -7,8 +7,7 @@ import { RootState } from '../../reducers/index';
 import Input from '../../components/input/Input';
 import Textarea from '../../components/textarea/textarea';
 import Submit from '../../components/submit/submit';
-import Message from '../../components/message/Message';
-import { loadNews, loadArticles } from '../../actions/articleActions';
+import { loadArticles } from '../../actions/articleActions';
 
 
 interface IParams {

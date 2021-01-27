@@ -2,7 +2,7 @@ import React, { FC, useState, useEffect, FormEvent } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { RootState } from '../reducers/index';
-import { signup, signin, setError } from '../actions/authActions';
+import { signup, setError } from '../actions/authActions';
 import Input from '../components/input/Input';
 import Submit from '../components/submit/submit';
 import Message from '../components/message/Message';

@@ -6,7 +6,6 @@ import { RootState } from '../../reducers/index';
 import Input from '../../components/input/Input';
 import Submit from '../../components/submit/submit';
 import Textarea from '../../components/textarea/textarea';
-import Message from '../../components/message/Message';
 import { loadNews, loadArticles } from '../../actions/articleActions';
 
 const Add: FC = () => {

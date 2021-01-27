@@ -1,22 +1,17 @@
-import React, { FC, useState, useEffect, FormEvent } from 'react';
+import React, { FC, useState, FormEvent } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import firebase from '../../firebase/firebase';
 
 import { RootState } from '../../reducers/index';
-import {  signin, setError, getUserById, setLoading } from '../../actions/authActions';
-import { User } from '../../actions/authActionsTypes';
+import {  signin, setError, setLoading } from '../../actions/authActions';
 import Input from '../../components/input/Input';
 import Submit from '../../components/submit/submit';
 import Message from '../../components/message/Message';
 
 const SignIn: FC = () => {
-    const [firstName, setFirstName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    //const [loading, setLoading] = useState(false);
     const dispatch = useDispatch();
-    const { user, error, loading } = useSelector((state: RootState) => state.auth);
-    const authenticated  = useSelector((state: RootState) => state.auth.authenticated);
+    const {  error, loading } = useSelector((state: RootState) => state.auth);
 
     const signInHandler = (e: FormEvent) => {
         e.preventDefault();

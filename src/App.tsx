@@ -3,8 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import firebase from './firebase/firebase';
 
-import { loadNews, loadArticles } from './actions/articleActions';
-import {  signout, signin, setError, getUserById, setLoading } from './actions/authActions';
+import {  signout, setError, getUserById, setLoading } from './actions/authActions';
 import { RootState } from './reducers/index';
 import SignUp from './pages/signUp'
 import SignIn from './pages/signin/signIn'
