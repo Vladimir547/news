@@ -6,7 +6,10 @@ interface INewsesActionType {
     type: string;
     payload: News[]
 }
-
+ interface ArticleActionType {
+     type: string;
+     payload: Article[];
+ }
 
 
 export const loadArticles = (articles: Article[]): ArticleActionType => {
